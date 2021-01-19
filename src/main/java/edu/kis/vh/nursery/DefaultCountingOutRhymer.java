@@ -7,6 +7,18 @@ public class DefaultCountingOutRhymer {
 	private static final int ERROR_CODE = -1;
 	private final int[] numbers = new int[ARRAY_SIZE];
 
+	public static int getArraySize() {
+		return ARRAY_SIZE;
+	}
+
+	public static int getEmptyIndex() {
+		return EMPTY_INDEX;
+	}
+
+	public static int getErrorCode() {
+		return ERROR_CODE;
+	}
+
 	public int getTotal() {
 		return total;
 	}
@@ -38,4 +50,11 @@ public class DefaultCountingOutRhymer {
 		return numbers[total--];
 	}
 
+	public int[] getNumbers() {
+		return numbers;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
 }
